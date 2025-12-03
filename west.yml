@@ -1,0 +1,14 @@
+# In your custom west.yml file (e.g., in your main app's repo)
+
+manifest:
+  # ... other manifest sections ...
+
+  remotes:
+    - name: github
+      url-base: git@github.com:mpaland
+
+  projects:
+    # ... existing projects from inherited manifests ...
+    - name: printf
+      path: submodules/printf
+      remote: github # Reference the remote defined above
